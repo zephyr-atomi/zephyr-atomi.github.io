@@ -42,6 +42,19 @@ I have an ODrive on hand, but going through the documentation and the process of
 
 Here’s a breakdown of the entire process and some key points.
 
+## Materials
+- [Makerbase Odrive 3.6 56V Board](https://www.aliexpress.us/item/3256807348504846.html)
+- [X2212 Motor + TLE5012 Encoder](https://www.aliexpress.us/item/3256805369870943.html)
+- STLink v2
+- DC Power Supply
+
+### Result Video
+
+<video controls width="640">
+  <source src="/blog/002-driving-bldc-motors-with-six-step-commutation/six_step_commutation_bldc.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 ## TLE5012 Encoder A/B/Z Signal Processing
 The TLE5012 is a magnetic encoder capable of outputting standard A/B/Z signals. To achieve precise commutation for the motor, we need to decode its position and direction using the A/B/Z signals.
 
@@ -131,7 +144,7 @@ After connecting the outputs of this code to my logic analyzer, I obtained the f
 *Six PWM Signals*
 
 #### Running the Motor
-After confirming the correctness of the PWM outputs, I flashed the code onto the STM32 chip on the ODrive. After powering it on and rebooting, I successfully observed the X2212 motor running smoothly. Below is the demo video.
+After confirming the correctness of the PWM outputs, I flashed the code onto the STM32 chip on the ODrive. After powering it on and rebooting, I successfully observed the X2212 motor running smoothly. Below is the demo video again.
 
 <video controls width="640">
   <source src="/blog/002-driving-bldc-motors-with-six-step-commutation/six_step_commutation_bldc.mp4" type="video/mp4">

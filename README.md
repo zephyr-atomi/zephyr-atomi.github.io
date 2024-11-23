@@ -8,5 +8,7 @@ The source code is being maintained on the `master` branch, while the build is b
 
 ## How to run the site locally
 ```shell
-
+nvm use v18
+npm run build
+npm run dev
 ```
