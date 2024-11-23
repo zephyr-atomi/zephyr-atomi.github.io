@@ -1,15 +1,15 @@
 export default {
   lang: 'en-US',
-  title: 'Lazar Kulasevic',
-  description: 'Lazar Kulasevic is a Software Engineer based in Nis, Serbia.',
+  title: 'Zephyr Guo',
+  description: 'Zephyr Guo is an Backend / Embedded Engineer.',
   cleanUrls: true,
   sitemap: {
-    hostname: 'https://lazarkulasevic.github.io',
+    hostname: 'https://zephyr-atomi.github.io',
     lastmodDateOnly: false
   },
   head: [
-    ['meta', { property: 'author', content: 'Lazar Kulasevic' }],
-    ['meta', { name: 'og:site_name', content: 'Lazar Kulasevic' }],
+    ['meta', { property: 'author', content: 'Zephyr Guo' }],
+    ['meta', { name: 'og:site_name', content: 'Zephyr Guo' }],
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
     ['meta', { name: 'twitter:site', content: '@else_clause' }],
     ['meta', { name: 'twitter:creator', content: '@else_clause' }],
@@ -23,36 +23,13 @@ export default {
     },
     nav: nav(),
     socialLinks: [
-      { icon: 'linkedin', link: 'https://www.linkedin.com/in/lazarkulasevic/' },
-      { icon: 'github', link: 'https://github.com/lazarkulasevic/' }
+      { icon: 'github', link: 'https://github.com/zephyr-atomi/' }
     ]
   }
 }
 
 function nav() {
   return [
-    {
-      text: 'Portfolio',
-      items: [
-        {
-          text: 'About Me',
-          link: '/portfolio/#briefly-about-me'
-        },
-        {
-          text: 'Work Experience',
-          link: '/portfolio/#work-experience'
-        },
-        {
-          text: 'Tech Stack',
-          link: '/portfolio/#tech-stack'
-        },
-        {
-          text: 'Get In Touch',
-          link: '/portfolio/#get-in-touch'
-        }
-      ],
-      activeMatch: '/portfolio'
-    },
     {
       text: 'Blog',
       link: '/blog/',
